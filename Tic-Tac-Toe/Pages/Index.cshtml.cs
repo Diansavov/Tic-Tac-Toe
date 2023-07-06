@@ -6,8 +6,9 @@ namespace Tic_Tac_Toe.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-
-        public int Cell{ get; set; }
+        [BindProperty]
+        public int Cell { get; set; }
+        public List<int> SelectedCells { get; set; }
 
         public IndexModel(ILogger<IndexModel> logger)
         {
@@ -21,7 +22,14 @@ namespace Tic_Tac_Toe.Pages
 
         public void OnPost(int cell)
         {
-            Cell++;
+            SelectedCells.Add(cell);
+            Random rnd = new Random();
+            int num = rnd.Next(1, 9);
+            while (SelectedCells.Contains(num))
+            {
+                num = rnd.Next(1, 9);
+            }
+            SelectedCells.Add(num);
         }
     }
 }
