@@ -7,6 +7,8 @@ namespace Tic_Tac_Toe.Pages
     {
         private readonly ILogger<IndexModel> _logger;
 
+        public int Cell{ get; set; }
+
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
@@ -17,9 +19,9 @@ namespace Tic_Tac_Toe.Pages
 
         }
 
-        public void OnPost()
+        public void OnPost(int cell)
         {
-
+            Cell++;
         }
     }
 }
