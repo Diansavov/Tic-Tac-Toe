@@ -16,5 +16,10 @@ namespace Tic_Tac_Toe.Pages
         {
 
         }
+
+        public void OnPost()
+        {
+
+        }
     }
 }
