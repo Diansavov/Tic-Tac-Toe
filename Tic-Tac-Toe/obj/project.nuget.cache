@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "X6MjQr5HXd1V5JaIqzPU4HZygpylFi8zccN48K6JCYsAoNWZO11j2Ioki7RhMx4o+GNdTzxOYOtspY1eO+d1zA==",
+  "dgSpecHash": "tCEb8CfVyhk0FL5fXOoUaU09FtYbHnBkq0Kc3ALNxIm9dleLXCHnKs7qtd/FNDVb5WtUcWxyCQW1fef4tFcL8A==",
   "success": true,
   "projectFilePath": "D:\\Projects\\Tic-Tac-Toe\\Tic-Tac-Toe\\Tic-Tac-Toe.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\stefan-pc\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
