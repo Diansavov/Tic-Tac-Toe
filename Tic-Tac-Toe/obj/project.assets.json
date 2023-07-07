@@ -55,23 +55,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\stefan-pc\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Student\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\Tic-Tac-Toe\\Tic-Tac-Toe\\Tic-Tac-Toe.csproj",
+      "projectUniqueName": "C:\\Projects\\Tic-Tac-Toe\\Tic-Tac-Toe\\Tic-Tac-Toe.csproj",
       "projectName": "Tic-Tac-Toe",
-      "projectPath": "D:\\Projects\\Tic-Tac-Toe\\Tic-Tac-Toe\\Tic-Tac-Toe.csproj",
-      "packagesPath": "C:\\Users\\stefan-pc\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\Tic-Tac-Toe\\Tic-Tac-Toe\\obj\\",
+      "projectPath": "C:\\Projects\\Tic-Tac-Toe\\Tic-Tac-Toe\\Tic-Tac-Toe.csproj",
+      "packagesPath": "C:\\Users\\Student\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\Tic-Tac-Toe\\Tic-Tac-Toe\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\stefan-pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -79,7 +75,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.305\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -122,7 +118,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }
