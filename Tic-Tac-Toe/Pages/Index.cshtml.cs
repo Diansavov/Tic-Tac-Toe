@@ -80,6 +80,8 @@ namespace Tic_Tac_Toe.Pages
 
                 SelectedCells[num] = "O";
             }
+
+            WinCondition();
             if (Win != null)
             {
                 return;
