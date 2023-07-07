@@ -8,17 +8,19 @@
     <h1 class="display-1">Tic-Tac-Toe</h1>
 
     <form method="post">
-
-        <input type="submit" style="width:200px;height:200px" id="btn1" value="" asp-route-cell="1" />
-        <input type="submit" style="width:200px;height:200px" id="btn2" value="" asp-route-cell="2" />
-        <input type="submit" style="width:200px;height:200px" id="btn3" value="" asp-route-cell="3" />
+        
+        <input type="submit" style="width:200px;height:200px" id="btn1" value="@Model.SelectedCells[1]" asp-route-cell="1" />
+        <input type="submit" style="width:200px;height:200px" id="btn2" value="@Model.SelectedCells[2]" asp-route-cell="2" />
+        <input type="submit" style="width:200px;height:200px" id="btn3" value="@Model.SelectedCells[3]" asp-route-cell="3" />
         <br />
-        <input type="submit" style="width:200px;height:200px" id="btn4" value="" asp-route-cell="4" />
-        <input type="submit" style="width:200px;height:200px" id="btn5" value="" asp-route-cell="5" />
-        <input type="submit" style="width:200px;height:200px" id="btn6" value="" asp-route-cell="6" />
+        <input type="submit" style="width:200px;height:200px" id="btn4" value="@Model.SelectedCells[4]" asp-route-cell="4" />
+        <input type="submit" style="width:200px;height:200px" id="btn5" value="@Model.SelectedCells[5]" asp-route-cell="5" />
+        <input type="submit" style="width:200px;height:200px" id="btn6" value="@Model.SelectedCells[6]" asp-route-cell="6" />
         <br />
-        <input type="submit" style="width:200px;height:200px" id="btn7" value="" asp-route-cell="7" />
-        <input type="submit" style="width:200px;height:200px" id="btn8" value="" asp-route-cell="8" />
-        <input type="submit" style="width:200px;height:200px" id="btn9" value="" asp-route-cell="9" />
+        <input type="submit" style="width:200px;height:200px" id="btn7" value="@Model.SelectedCells[7]" asp-route-cell="7" />
+        <input type="submit" style="width:200px;height:200px" id="btn8" value="@Model.SelectedCells[8]" asp-route-cell="8" />
+        <input type="submit" style="width:200px;height:200px" id="btn9" value="@Model.SelectedCells[9]" asp-route-cell="9" />
     </form>
+
+    
 </div>

@@ -8,7 +8,25 @@ namespace Tic_Tac_Toe.Pages
         private readonly ILogger<IndexModel> _logger;
         [BindProperty]
         public int Cell { get; set; }
-        public List<int> SelectedCells { get; set; }
+
+        private Dictionary<int, string> selectedCells = new Dictionary<int, string>(9)
+        {
+            {1, "" },
+            {2, "" },
+            {3, "" },
+            {4, "" },
+            {5, "" },
+            {6, "" },
+            {7, "" },
+            {8, "" },
+            {9, "" },
+        };
+
+        public Dictionary<int, string> SelectedCells
+        {
+             get{ return selectedCells; } 
+             set{ selectedCells = value; } 
+        }
 
         public IndexModel(ILogger<IndexModel> logger)
         {
@@ -22,14 +40,19 @@ namespace Tic_Tac_Toe.Pages
 
         public void OnPost(int cell)
         {
-            SelectedCells.Add(cell);
+            SelectedCells[Cell] = "X";
+
             Random rnd = new Random();
-            int num = rnd.Next(1, 9);
-            while (SelectedCells.Contains(num))
+            int num = rnd.Next(1, 10);
+
+            while (SelectedCells[num] == "X")
             {
-                num = rnd.Next(1, 9);
+                num = rnd.Next(1, 10);
             }
-            SelectedCells.Add(num);
+
+            SelectedCells[num] = "O";
+
+            TempData.Keep("SelectedCells");
         }
     }
 }
