@@ -56,13 +56,28 @@ namespace Tic_Tac_Toe.Pages
         {
             SelectedCells = TempData.Get<Dictionary<int, string>>("Selected");
 
-            SelectedCells[Cell] = "X";
-            WinCondition();
+            if (SelectedCells[Cell] == "X" || SelectedCells[Cell] == "O")
+            {
 
+                TempData.Set("Selected", SelectedCells);
+
+                TempData.Keep("SelectedCells");
+                return;
+            }
+            else if (SelectedCells[Cell] == "")
+            {
+                SelectedCells[Cell] = "X";
+            }
+
+
+
+
+            WinCondition();
             if (Win != null)
             {
                 return;
             }
+
             Random rnd = new Random();
             int num = rnd.Next(1, 10);
 
