@@ -69,9 +69,6 @@ namespace Tic_Tac_Toe.Pages
                 SelectedCells[Cell] = "X";
             }
 
-
-
-
             WinCondition();
             if (Win != null)
             {
@@ -113,34 +110,42 @@ namespace Tic_Tac_Toe.Pages
             if (SelectedCells[1] == "X" && SelectedCells[2] == "X" && SelectedCells[3] == "X")
             {
                 Win = "You win";
+                return;
             }
             if (selectedCells[4] == "X" && SelectedCells[5] == "X" && SelectedCells[6] == "X")
             {
                 Win = "You win";
+                return;
             }
             if (SelectedCells[7] == "X" && SelectedCells[8] == "X" && SelectedCells[9] == "X")
             {
                 Win = "You win";
+                return;
             }
             if (SelectedCells[1] == "X" && SelectedCells[4] == "X" && SelectedCells[7] == "X")
             {
                 Win = "You win";
+                return;
             }
             if (SelectedCells[2] == "X" && SelectedCells[5] == "X" && SelectedCells[8] == "X")
             {
                 Win = "You win";
+                return;
             }
             if (SelectedCells[3] == "X" && SelectedCells[6] == "X" && SelectedCells[9] == "X")
             {
                 Win = "You win";
+                return;
             }
             if (SelectedCells[1] == "X" && SelectedCells[5] == "X" && SelectedCells[9] == "X")
             {
                 Win = "You win";
+                return;
             }
             if (SelectedCells[3] == "X" && SelectedCells[5] == "X" && SelectedCells[7] == "X")
             {
                 Win = "You win";
+                return;
             }
 
 
@@ -150,35 +155,51 @@ namespace Tic_Tac_Toe.Pages
             if (SelectedCells[1] == "O" && SelectedCells[2] == "O" && SelectedCells[3] == "O")
             {
                 Win = "You lose";
+                return;
             }
             if (selectedCells[4] == "O" && SelectedCells[5] == "O" && SelectedCells[6] == "O")
             {
                 Win = "You lose";
+                return;
             }
             if (SelectedCells[7] == "O" && SelectedCells[8] == "O" && SelectedCells[9] == "O")
             {
                 Win = "You lose";
+                return;
             }
             if (SelectedCells[1] == "O" && SelectedCells[4] == "O" && SelectedCells[7] == "O")
             {
                 Win = "You lose";
+                return;
             }
             if (SelectedCells[2] == "O" && SelectedCells[5] == "O" && SelectedCells[8] == "O")
             {
                 Win = "You lose";
+                return;
             }
             if (SelectedCells[3] == "O" && SelectedCells[6] == "O" && SelectedCells[9] == "O")
             {
                 Win = "You lose";
+                return;
             }
             if (SelectedCells[1] == "O" && SelectedCells[5] == "O" && SelectedCells[9] == "O")
             {
                 Win = "You lose";
+                return;
             }
             if (SelectedCells[3] == "O" && SelectedCells[5] == "O" && SelectedCells[7] == "O")
             {
                 Win = "You lose";
+                return;
             }
+
+            if (!SelectedCells.Values.Contains(""))
+            {
+                Win = "Draw";
+                return;
+            }
+
+            
         }
     }
 }
