@@ -1,5 +1,13 @@
 ﻿.button {
     color: #08233e;
     font: 2.4em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
-    padding: 140px;
+    width: 250px;
+    height: 250px;
+    text-align:center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 250px 250px 250px;
+    align-self: center;
 }
