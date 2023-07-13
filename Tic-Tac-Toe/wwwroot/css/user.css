@@ -1,5 +1,5 @@
 ﻿.button {
-    color: blue;
+    color: red;
     font: 2.4em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
     width: 250px;
     height: 250px;
@@ -20,7 +20,7 @@
     transform: rotate(45deg);
     transform-origin: center;
     margin-left: -440px;
-    animation: grow 0.5s linear forwards;
+    animation: growDiagonal 0.5s linear forwards;
 }
 
 .counterDiagonalLine {
@@ -29,7 +29,7 @@
     transform: rotate(-45deg);
     transform-origin: center;
     margin-left: -440px;
-    animation: grow 0.5s linear forwards;
+    animation: growDiagonal 0.5s linear forwards;
 }
 
 .horizontalLine {
@@ -41,6 +41,7 @@
     background-color: currentColor;
     opacity: 1;
     margin-left: -271px;
+    animation: growHorizontal 0.5s linear forwards;
 }
 
 .verticalLine {
@@ -53,10 +54,11 @@
     background-color: currentColor;
     opacity: 1;
     margin-left: -271px;
+    animation: growVertical 0.5s linear forwards;
 }
 
 
-@keyframes grow {
+@keyframes growDiagonal {
     from {
         width: 20%;
         margin-left: 100px;
@@ -65,6 +67,28 @@
     to {
         width: 450%;
         margin-left: -440px;
+    }
+}
+@keyframes growHorizontal {
+    from {
+        width: 20%;
+        margin-left: 100px;
+    }
+
+    to {
+        width: 318%;
+        margin-left: -271px;
+    }
+}
+@keyframes growVertical {
+    from {
+        width: 20%;
+        margin-left: 100px;
+    }
+
+    to {
+        width: 318%;
+        margin-left: -271px;
     }
 }
 

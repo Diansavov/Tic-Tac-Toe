@@ -25,8 +25,11 @@
             <input type="submit" class="button" id="btn7" value="@Model.SelectedCells[7]" asp-route-cell="7" />
             <input type="submit" class="button item3" id="btn8" value="@Model.SelectedCells[8]" asp-route-cell="8" />
             <input type="submit" class="button" id="btn9" value="@Model.SelectedCells[9]" asp-route-cell="9" />
+            @if (Model.Win != null && Model.Win != "Draw")
+            {
+                <hr class="@LineDraw()"/>
+            }
 
-            <@LineDraw() />
         </div>
     </form>
 
@@ -41,35 +44,35 @@
         switch (Model.Line)
         {
             case 1:
-                html = "hr class=" + "counterDiagonalLine item";
-                return "Yes";
+                html = "horizontalLine item1";
+                return html;
 
             case 2:
-                html = "hr class=" + "counterDiagonalLine item";
-                return "Yes";
+                html = "horizontalLine item2";
+                return html;
 
             case 3:
-                html = "hr class=" + "counterDiagonalLine item";
-                return "Yes";
+                html = "horizontalLine item3";
+                return html;
 
             case 4:
-                html = "hr class=" + "counterDiagonalLine item";
-                return "Yes";
+                html = "verticalLine item4";
+                return html;
 
             case 5:
-                html = "hr class=" + "counterDiagonalLine item";
-                return "Yes";
+                html = "verticalLine item5";
+                return html;
 
             case 6:
-                html = "hr class=" + "counterDiagonalLine item";
-                return "Yes";
+                html = "verticalLine item6";
+                return html;
 
             case 7:
-                html = "hr class=" + "DiagonalLine item";
-                return "Yes";
+                html = "diagonalLine item5";
+                return html;
 
             case 8:
-                html = "hr class=" + "counterDiagonalLine item";
+                html = "counterDiagonalLine item5";
                 return html;
             default:
                 return "Yes";
