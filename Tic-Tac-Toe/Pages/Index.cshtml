@@ -14,21 +14,18 @@
 
     <form method="post">
         <div class="grid-container">
-            <input type="submit" class="button item-1" id="btn1" value="@Model.SelectedCells[1]" asp-route-cell="1" />
+            <input type="submit" class="button" id="btn1" value="@Model.SelectedCells[1]" asp-route-cell="1" />
             <input type="submit" class="button" id="btn2" value="@Model.SelectedCells[2]" asp-route-cell="2" />
             <input type="submit" class="button" id="btn3" value="@Model.SelectedCells[3]" asp-route-cell="3" />
 
             <input type="submit" class="button" id="btn4" value="@Model.SelectedCells[4]" asp-route-cell="4" />
-            <input type="submit" class="button" id="btn5" value="@Model.SelectedCells[5]" asp-route-cell="5" />
+            <input type="submit" class="button item" id="btn5" value="@Model.SelectedCells[5]" asp-route-cell="5" />
             <input type="submit" class="button" id="btn6" value="@Model.SelectedCells[6]" asp-route-cell="6" />
 
             <input type="submit" class="button" id="btn7" value="@Model.SelectedCells[7]" asp-route-cell="7" />
             <input type="submit" class="button" id="btn8" value="@Model.SelectedCells[8]" asp-route-cell="8" />
             <input type="submit" class="button" id="btn9" value="@Model.SelectedCells[9]" asp-route-cell="9" />
-            @if (Model.Win == "You win")
-            {
-                <hr class="counterDiagonalLine item-1" />
-            }
+            <@LineDraw() />
         </div>
     </form>
 
@@ -36,28 +33,46 @@
 
 </div>
 
-@*@functions {
-    public object LineDaw()
+@functions {
+    public string LineDraw()
     {
+        string html = "";
         switch (Model.Line)
         {
             case 1:
-                break;
+                html = "hr class=" + "counterDiagonalLine item";
+                return "Yes";
+
             case 2:
-                break;
+                html = "hr class=" + "counterDiagonalLine item";
+                return "Yes";
+
             case 3:
-                break;
+                html = "hr class=" + "counterDiagonalLine item";
+                return "Yes";
+
             case 4:
-                break;
+                html = "hr class=" + "counterDiagonalLine item";
+                return "Yes";
+
             case 5:
-                break;
+                html = "hr class=" + "counterDiagonalLine item";
+                return "Yes";
+
             case 6:
-                break;
+                html = "hr class=" + "counterDiagonalLine item";
+                return "Yes";
+
             case 7:
-                break;
+                html = "hr class=" + "DiagonalLine item";
+                return "Yes";
+
             case 8:
-                 <hr class="counterDiagonalLine item" />
-                break;
+                html = "hr class=" + "counterDiagonalLine item";
+                return html;
+            default:
+                return "Yes";
+
         }
     }
-}*@
+}
