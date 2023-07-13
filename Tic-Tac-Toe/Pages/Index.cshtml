@@ -11,7 +11,8 @@
 <div class="text-center">
 
     <h1 class="display-1">Tic-Tac-Toe</h1>
-
+    <br />
+    <br />
     <form method="post">
         <div class="grid-container">
             <input type="submit" class="button" id="btn1" value="@Model.SelectedCells[1]" asp-route-cell="1" />
@@ -32,8 +33,9 @@
 
         </div>
     </form>
-
-    <h2>@Model.Win</h2>
+    <br />
+    <br />
+    <h2 class="display-1">@Model.Win</h2>
 
 </div>
 
