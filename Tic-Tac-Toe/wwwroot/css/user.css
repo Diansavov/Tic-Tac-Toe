@@ -30,6 +30,13 @@
     margin-left: -440px;
     animation: grow 0.5s linear forwards;
 }
+.horizontalLine {
+    border-bottom: 3px solid #310919;
+    width: 20%;
+    transform-origin: center;
+    margin-left: -440px;
+    animation: grow 0.5s linear forwards;
+}
 
 @keyframes grow {
     from {
@@ -43,7 +50,10 @@
     }
 }
 
-
+.item-1 {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+}
 .item {
     grid-column: 2 / 2;
     grid-row: 2 / 2;
