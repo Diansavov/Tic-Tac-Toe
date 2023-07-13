@@ -3,11 +3,48 @@
     font: 2.4em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
     width: 250px;
     height: 250px;
-    text-align:center;
+    text-align: center;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: 250px 250px 250px;
     grid-template-rows: 250px 250px 250px;
+    align-items: center;
     justify-content: center;
+}
+
+.diagonalLine {
+    border-bottom: 3px solid #310919;
+    width: 20%;
+    transform: rotate(45deg);
+    transform-origin: center;
+    margin-left: -440px;
+    animation: grow 0.5s linear forwards;
+}
+.counterDiagonalLine {
+    border-bottom: 3px solid #310919;
+    width: 20%;
+    transform: rotate(-45deg);
+    transform-origin: center;
+    margin-left: -440px;
+    animation: grow 0.5s linear forwards;
+}
+
+@keyframes grow {
+    from {
+        width: 20%;
+        margin-left: 100px;
+    }
+
+    to {
+        width: 450%;
+        margin-left: -440px;
+    }
+}
+
+
+.item {
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
 }
