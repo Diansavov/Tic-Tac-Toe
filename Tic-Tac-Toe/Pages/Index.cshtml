@@ -25,10 +25,7 @@
             <input type="submit" class="button" id="btn7" value="@Model.SelectedCells[7]" asp-route-cell="7" />
             <input type="submit" class="button" id="btn8" value="@Model.SelectedCells[8]" asp-route-cell="8" />
             <input type="submit" class="button" id="btn9" value="@Model.SelectedCells[9]" asp-route-cell="9" />
-            @if (Model.Line == 8)
-            {
-                <hr class="counterDiagonalLine item" />
-            }
+            <@LineDraw() />
         </div>
     </form>
 
@@ -37,27 +34,45 @@
 </div>
 
 @functions {
-    public void LineDraw()
+    public string LineDraw()
     {
+        string html = "";
         switch (Model.Line)
         {
             case 1:
-                break;
+                html = "hr class=" + "counterDiagonalLine item";
+                return "Yes";
+
             case 2:
-                break;
+                html = "hr class=" + "counterDiagonalLine item";
+                return "Yes";
+
             case 3:
-                break;
+                html = "hr class=" + "counterDiagonalLine item";
+                return "Yes";
+
             case 4:
-                break;
+                html = "hr class=" + "counterDiagonalLine item";
+                return "Yes";
+
             case 5:
-                break;
+                html = "hr class=" + "counterDiagonalLine item";
+                return "Yes";
+
             case 6:
-                break;
+                html = "hr class=" + "counterDiagonalLine item";
+                return "Yes";
+
             case 7:
-                break;
+                html = "hr class=" + "DiagonalLine item";
+                return "Yes";
+
             case 8:
-                <hr class="counterDiagonalLine item" />
-                break;
+                html = "hr class=" + "counterDiagonalLine item";
+                return html;
+            default:
+                return "Yes";
+
         }
     }
 }

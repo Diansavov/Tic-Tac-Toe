@@ -1,5 +1,5 @@
 ﻿.button {
-    color: blue;
+    color: #08233e;
     font: 2.4em Futura, ‘Century Gothic’, AppleGothic, sans-serif;
     width: 250px;
     height: 250px;
@@ -32,27 +32,11 @@
 }
 .horizontalLine {
     border-bottom: 3px solid #310919;
-    width: 318%;
-    height:5px;
+    width: 20%;
     transform-origin: center;
-    color: black;
-    background-color: currentColor;
-    opacity: 1;
-    
-    margin-left: -271px;
+    margin-left: -440px;
+    animation: grow 0.5s linear forwards;
 }
-.verticalLine {
-    border-bottom: 3px solid #310919;
-    width: 318%;
-    height: 5px;
-    transform: rotate(90deg);
-    transform-origin: center;
-    color: black;
-    background-color: currentColor;
-    opacity: 1;
-    margin-left: -271px;
-}
-
 
 @keyframes grow {
     from {
@@ -66,28 +50,11 @@
     }
 }
 
-.item1 {
+.item-1 {
     grid-column: 2 / 2;
     grid-row: 1 / 1;
 }
-.item2 {
+.item {
     grid-column: 2 / 2;
     grid-row: 2 / 2;
-}
-.item3
-{
-    grid-column: 2/2;
-    grid-row: 3/3;
-}
-.item4 {
-    grid-column: 1/1;
-    grid-row: 2/2;
-}
-.item5{
-    grid-column: 2 / 2;
-    grid-row: 2 / 2;
-}
-.item6{
-    grid-column:3/3;
-    grid-row: 2/2;
 }
