@@ -91,7 +91,6 @@ namespace Tic_Tac_Toe.Pages
             }
             if (SelectedCells[num] != "X" && SelectedCells[num] != "O")
             {
-
                 SelectedCells[num] = "O";
             }
 
@@ -115,43 +114,43 @@ namespace Tic_Tac_Toe.Pages
                 Line = 1;
                 return;
             }
-            if (selectedCells[4] == "X" && SelectedCells[5] == "X" && SelectedCells[6] == "X")
+            else if (selectedCells[4] == "X" && SelectedCells[5] == "X" && SelectedCells[6] == "X")
             {
                 Win = "You win";
                 Line = 2;
                 return;
             }
-            if (SelectedCells[7] == "X" && SelectedCells[8] == "X" && SelectedCells[9] == "X")
+            else if (SelectedCells[7] == "X" && SelectedCells[8] == "X" && SelectedCells[9] == "X")
             {
                 Win = "You win";
                 Line = 3;
                 return;
             }
-            if (SelectedCells[1] == "X" && SelectedCells[4] == "X" && SelectedCells[7] == "X")
+            else if (SelectedCells[1] == "X" && SelectedCells[4] == "X" && SelectedCells[7] == "X")
             {
                 Win = "You win";
                 Line = 4;
                 return;
             }
-            if (SelectedCells[2] == "X" && SelectedCells[5] == "X" && SelectedCells[8] == "X")
+            else if (SelectedCells[2] == "X" && SelectedCells[5] == "X" && SelectedCells[8] == "X")
             {
                 Win = "You win";
                 Line = 5;
                 return;
             }
-            if (SelectedCells[3] == "X" && SelectedCells[6] == "X" && SelectedCells[9] == "X")
+            else if (SelectedCells[3] == "X" && SelectedCells[6] == "X" && SelectedCells[9] == "X")
             {
                 Win = "You win";
                 Line = 6;
                 return;
             }
-            if (SelectedCells[1] == "X" && SelectedCells[5] == "X" && SelectedCells[9] == "X")
+            else if (SelectedCells[1] == "X" && SelectedCells[5] == "X" && SelectedCells[9] == "X")
             {
                 Win = "You win";
                 Line = 7;
                 return;
             }
-            if (SelectedCells[3] == "X" && SelectedCells[5] == "X" && SelectedCells[7] == "X")
+            else if (SelectedCells[3] == "X" && SelectedCells[5] == "X" && SelectedCells[7] == "X")
             {
                 Win = "You win";
                 Line = 8;
@@ -169,49 +168,49 @@ namespace Tic_Tac_Toe.Pages
 
                 return;
             }
-            if (selectedCells[4] == "O" && SelectedCells[5] == "O" && SelectedCells[6] == "O")
+            else if (selectedCells[4] == "O" && SelectedCells[5] == "O" && SelectedCells[6] == "O")
             {
                 Win = "You lose";
                 Line = 2;
 
                 return;
             }
-            if (SelectedCells[7] == "O" && SelectedCells[8] == "O" && SelectedCells[9] == "O")
+            else if (SelectedCells[7] == "O" && SelectedCells[8] == "O" && SelectedCells[9] == "O")
             {
                 Win = "You lose";
                 Line = 3;
 
                 return;
             }
-            if (SelectedCells[1] == "O" && SelectedCells[4] == "O" && SelectedCells[7] == "O")
+            else if (SelectedCells[1] == "O" && SelectedCells[4] == "O" && SelectedCells[7] == "O")
             {
                 Win = "You lose";
                 Line = 4;
 
                 return;
             }
-            if (SelectedCells[2] == "O" && SelectedCells[5] == "O" && SelectedCells[8] == "O")
+            else if (SelectedCells[2] == "O" && SelectedCells[5] == "O" && SelectedCells[8] == "O")
             {
                 Win = "You lose";
                 Line = 5;
 
                 return;
             }
-            if (SelectedCells[3] == "O" && SelectedCells[6] == "O" && SelectedCells[9] == "O")
+            else if (SelectedCells[3] == "O" && SelectedCells[6] == "O" && SelectedCells[9] == "O")
             {
                 Win = "You lose";
                 Line = 6;
 
                 return;
             }
-            if (SelectedCells[1] == "O" && SelectedCells[5] == "O" && SelectedCells[9] == "O")
+            else if (SelectedCells[1] == "O" && SelectedCells[5] == "O" && SelectedCells[9] == "O")
             {
                 Win = "You lose";
                 Line = 7;
 
                 return;
             }
-            if (SelectedCells[3] == "O" && SelectedCells[5] == "O" && SelectedCells[7] == "O")
+            else if (SelectedCells[3] == "O" && SelectedCells[5] == "O" && SelectedCells[7] == "O")
             {
                 Win = "You lose";
                 Line = 8;
