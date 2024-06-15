@@ -12,3 +12,5 @@ Some other risks may include:
 
 If anyone wants to make this "beautiful" code even better they should do so at their own risk!
 !GOOD LUCK!
+
+P.S The later console version I made's code looks much much better but I am too lazy to put it in the ASP.NET version!
