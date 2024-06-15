@@ -1,0 +1,14 @@
+/home/Dian/Tic-Tac-Toe-console/bin/Debug/net8.0/Tic-Tac-Toe-console
+/home/Dian/Tic-Tac-Toe-console/bin/Debug/net8.0/Tic-Tac-Toe-console.deps.json
+/home/Dian/Tic-Tac-Toe-console/bin/Debug/net8.0/Tic-Tac-Toe-console.runtimeconfig.json
+/home/Dian/Tic-Tac-Toe-console/bin/Debug/net8.0/Tic-Tac-Toe-console.dll
+/home/Dian/Tic-Tac-Toe-console/bin/Debug/net8.0/Tic-Tac-Toe-console.pdb
+/home/Dian/Tic-Tac-Toe-console/obj/Debug/net8.0/Tic-Tac-Toe-console.GeneratedMSBuildEditorConfig.editorconfig
+/home/Dian/Tic-Tac-Toe-console/obj/Debug/net8.0/Tic-Tac-Toe-console.AssemblyInfoInputs.cache
+/home/Dian/Tic-Tac-Toe-console/obj/Debug/net8.0/Tic-Tac-Toe-console.AssemblyInfo.cs
+/home/Dian/Tic-Tac-Toe-console/obj/Debug/net8.0/Tic-Tac-Toe-console.csproj.CoreCompileInputs.cache
+/home/Dian/Tic-Tac-Toe-console/obj/Debug/net8.0/Tic-Tac-Toe-console.dll
+/home/Dian/Tic-Tac-Toe-console/obj/Debug/net8.0/refint/Tic-Tac-Toe-console.dll
+/home/Dian/Tic-Tac-Toe-console/obj/Debug/net8.0/Tic-Tac-Toe-console.pdb
+/home/Dian/Tic-Tac-Toe-console/obj/Debug/net8.0/Tic-Tac-Toe-console.genruntimeconfig.cache
+/home/Dian/Tic-Tac-Toe-console/obj/Debug/net8.0/ref/Tic-Tac-Toe-console.dll

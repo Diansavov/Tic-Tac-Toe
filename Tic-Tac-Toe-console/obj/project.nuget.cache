@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+IDc+pTWbBRxCePGU94ga2eOov2DbK8EjR4r3HHyLLv7E1Uy6MQ5f47BqplUKh9to45Z7ii5oc6urq5nRRj3Lg==",
+  "success": true,
+  "projectFilePath": "/home/Dian/Tic-Tac-Toe-console/Tic-Tac-Toe-console.csproj",
+  "expectedPackageFiles": [
+    "/home/Dian/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.3/microsoft.aspnetcore.app.ref.8.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "YS7w9FzyV6XZBa00rsYxilOTHMi6eXSTSI5x0tMplakJkEEGbCZ+fnAX6REOAIQLlzBlr9jMeiw27F9rieYMOw==",
+  "dgSpecHash": "ptAlr80NxXM3tfWs+X0+RAn5xYrbdoOon/1U7yWZoZ+jzQeAX0Mov7tQAxxM4U6lSg2jDMIIMKW14V0RYAGvhw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC-Dian\\Documents\\GitHub\\Tic-Tac-Toe\\Tic-Tac-Toe\\Tic-Tac-Toe.csproj",
+  "projectFilePath": "/home/Dian/Tic-Tac-Toe/Tic-Tac-Toe/Tic-Tac-Toe.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\PC-Dian\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+    "/home/Dian/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/home/Dian/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.3/microsoft.aspnetcore.app.ref.8.0.3.nupkg.sha512"
   ],
   "logs": []
 }
